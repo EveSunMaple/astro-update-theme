@@ -1,0 +1,3 @@
+D:/Project/astro-update-theme/build/CMakeFiles/release.dir
+D:/Project/astro-update-theme/build/CMakeFiles/edit_cache.dir
+D:/Project/astro-update-theme/build/CMakeFiles/rebuild_cache.dir
