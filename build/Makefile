@@ -153,6 +153,78 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/modules/menu.obj: src/modules/menu.cpp.obj
+.PHONY : src/modules/menu.obj
+
+# target to build an object file
+src/modules/menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/menu.cpp.obj
+.PHONY : src/modules/menu.cpp.obj
+
+src/modules/menu.i: src/modules/menu.cpp.i
+.PHONY : src/modules/menu.i
+
+# target to preprocess a source file
+src/modules/menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/menu.cpp.i
+.PHONY : src/modules/menu.cpp.i
+
+src/modules/menu.s: src/modules/menu.cpp.s
+.PHONY : src/modules/menu.s
+
+# target to generate assembly for a file
+src/modules/menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/menu.cpp.s
+.PHONY : src/modules/menu.cpp.s
+
+src/modules/operation.obj: src/modules/operation.cpp.obj
+.PHONY : src/modules/operation.obj
+
+# target to build an object file
+src/modules/operation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/operation.cpp.obj
+.PHONY : src/modules/operation.cpp.obj
+
+src/modules/operation.i: src/modules/operation.cpp.i
+.PHONY : src/modules/operation.i
+
+# target to preprocess a source file
+src/modules/operation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/operation.cpp.i
+.PHONY : src/modules/operation.cpp.i
+
+src/modules/operation.s: src/modules/operation.cpp.s
+.PHONY : src/modules/operation.s
+
+# target to generate assembly for a file
+src/modules/operation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/operation.cpp.s
+.PHONY : src/modules/operation.cpp.s
+
+src/utils/config.obj: src/utils/config.cpp.obj
+.PHONY : src/utils/config.obj
+
+# target to build an object file
+src/utils/config.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/utils/config.cpp.obj
+.PHONY : src/utils/config.cpp.obj
+
+src/utils/config.i: src/utils/config.cpp.i
+.PHONY : src/utils/config.i
+
+# target to preprocess a source file
+src/utils/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/utils/config.cpp.i
+.PHONY : src/utils/config.cpp.i
+
+src/utils/config.s: src/utils/config.cpp.s
+.PHONY : src/utils/config.s
+
+# target to generate assembly for a file
+src/utils/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/utils/config.cpp.s
+.PHONY : src/utils/config.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +237,15 @@ help:
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/modules/menu.obj"
+	@echo "... src/modules/menu.i"
+	@echo "... src/modules/menu.s"
+	@echo "... src/modules/operation.obj"
+	@echo "... src/modules/operation.i"
+	@echo "... src/modules/operation.s"
+	@echo "... src/utils/config.obj"
+	@echo "... src/utils/config.i"
+	@echo "... src/utils/config.s"
 .PHONY : help
 
 

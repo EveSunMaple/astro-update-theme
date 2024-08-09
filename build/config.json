@@ -1,0 +1,17 @@
+{
+  "astro-project": [
+    {
+      "clone_repo": "D:\\Project\\test\\test-frosti",
+      "local_repo": "D:\\Project\\test\\test-frosti",
+      "name": "frosti",
+      "remote_repo": "https://github.com/EveSunMaple/Frosti"
+    },
+    {
+      "clone_repo": "D:\\Project\\test\\",
+      "local_repo": "D:\\Project\\test\\",
+      "name": "astropaper",
+      "remote_repo": "https://github.com/satnaing/astro-paper"
+    }
+  ],
+  "name": "frosti"
+}

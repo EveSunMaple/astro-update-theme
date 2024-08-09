@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/release.dir/includes_CXX.rsp
 
-CXX_FLAGS =  -O2 -O2 -O3 -DNDEBUG -std=gnu++17
+CXX_FLAGS =  -O2 -g -g -std=gnu++20
 

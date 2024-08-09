@@ -1,17 +1,45 @@
-#include "CLI11/CLI11.hpp"
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <nlohmann/json.hpp>
+#include "utils/colors.h"
+#include "utils/config.h"
+#include "modules/menu.h"
 
-int main(int argc, char **argv)
+int main()
 {
-    CLI::App app{"CLI Tool"};
+    if (!CheckDependency("git --version"))
+    {
+        PRINT_RED("Git is not installed. Please install Git and try again.\n");
+        return 1;
+    }
 
-    std::string lang = "en";
-    app.add_option("-l,--lang", lang, "Language code")->default_val("en");
+    if (!CheckDependency("node -v"))
+    {
+        PRINT_RED("Node.js is not installed. Please install Node.js and try again.\n");
+        return 1;
+    }
 
-    CLI11_PARSE(app, argc, argv);
+    std::string configFile = "config.json";
+    Json config;
 
-    std::cout << "hi" << std::endl;
-
-    getchar();
+    if (!ConfigExists(configFile))
+    {
+        PRINT_CYAN("Configuration file not found. Creating a new configuration file.\n");
+        CreateConfig(configFile);
+        PRINT_GREEN("Configuration file has been created and saved as " << TEXT_CYAN(configFile) << TEXT_GREEN(".\n"));
+    }
+    else
+    {
+        PRINT_GREEN("Configuration file " << TEXT_CYAN(configFile) << TEXT_GREEN(" already exists.\n"));
+        std::ifstream file(configFile);
+        file >> config;
+        file.close();
+        if (!ValidateConfig(config))
+            return 1;
+        system("pause");
+        EnterMenu(config, configFile);
+    }
 
     return 0;
 }

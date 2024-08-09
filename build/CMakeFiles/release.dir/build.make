@@ -84,21 +84,72 @@ CMakeFiles/release.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/release.dir/src/main.cpp.s"
 	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Project/astro-update-theme/src/main.cpp -o CMakeFiles/release.dir/src/main.cpp.s
 
+CMakeFiles/release.dir/src/modules/menu.cpp.obj: CMakeFiles/release.dir/flags.make
+CMakeFiles/release.dir/src/modules/menu.cpp.obj: CMakeFiles/release.dir/includes_CXX.rsp
+CMakeFiles/release.dir/src/modules/menu.cpp.obj: D:/Project/astro-update-theme/src/modules/menu.cpp
+CMakeFiles/release.dir/src/modules/menu.cpp.obj: CMakeFiles/release.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Project/astro-update-theme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/release.dir/src/modules/menu.cpp.obj"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release.dir/src/modules/menu.cpp.obj -MF CMakeFiles/release.dir/src/modules/menu.cpp.obj.d -o CMakeFiles/release.dir/src/modules/menu.cpp.obj -c D:/Project/astro-update-theme/src/modules/menu.cpp
+
+CMakeFiles/release.dir/src/modules/menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/release.dir/src/modules/menu.cpp.i"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Project/astro-update-theme/src/modules/menu.cpp > CMakeFiles/release.dir/src/modules/menu.cpp.i
+
+CMakeFiles/release.dir/src/modules/menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/release.dir/src/modules/menu.cpp.s"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Project/astro-update-theme/src/modules/menu.cpp -o CMakeFiles/release.dir/src/modules/menu.cpp.s
+
+CMakeFiles/release.dir/src/modules/operation.cpp.obj: CMakeFiles/release.dir/flags.make
+CMakeFiles/release.dir/src/modules/operation.cpp.obj: CMakeFiles/release.dir/includes_CXX.rsp
+CMakeFiles/release.dir/src/modules/operation.cpp.obj: D:/Project/astro-update-theme/src/modules/operation.cpp
+CMakeFiles/release.dir/src/modules/operation.cpp.obj: CMakeFiles/release.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Project/astro-update-theme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/release.dir/src/modules/operation.cpp.obj"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release.dir/src/modules/operation.cpp.obj -MF CMakeFiles/release.dir/src/modules/operation.cpp.obj.d -o CMakeFiles/release.dir/src/modules/operation.cpp.obj -c D:/Project/astro-update-theme/src/modules/operation.cpp
+
+CMakeFiles/release.dir/src/modules/operation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/release.dir/src/modules/operation.cpp.i"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Project/astro-update-theme/src/modules/operation.cpp > CMakeFiles/release.dir/src/modules/operation.cpp.i
+
+CMakeFiles/release.dir/src/modules/operation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/release.dir/src/modules/operation.cpp.s"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Project/astro-update-theme/src/modules/operation.cpp -o CMakeFiles/release.dir/src/modules/operation.cpp.s
+
+CMakeFiles/release.dir/src/utils/config.cpp.obj: CMakeFiles/release.dir/flags.make
+CMakeFiles/release.dir/src/utils/config.cpp.obj: CMakeFiles/release.dir/includes_CXX.rsp
+CMakeFiles/release.dir/src/utils/config.cpp.obj: D:/Project/astro-update-theme/src/utils/config.cpp
+CMakeFiles/release.dir/src/utils/config.cpp.obj: CMakeFiles/release.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/Project/astro-update-theme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/release.dir/src/utils/config.cpp.obj"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/release.dir/src/utils/config.cpp.obj -MF CMakeFiles/release.dir/src/utils/config.cpp.obj.d -o CMakeFiles/release.dir/src/utils/config.cpp.obj -c D:/Project/astro-update-theme/src/utils/config.cpp
+
+CMakeFiles/release.dir/src/utils/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/release.dir/src/utils/config.cpp.i"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/Project/astro-update-theme/src/utils/config.cpp > CMakeFiles/release.dir/src/utils/config.cpp.i
+
+CMakeFiles/release.dir/src/utils/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/release.dir/src/utils/config.cpp.s"
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/Project/astro-update-theme/src/utils/config.cpp -o CMakeFiles/release.dir/src/utils/config.cpp.s
+
 # Object files for target release
 release_OBJECTS = \
-"CMakeFiles/release.dir/src/main.cpp.obj"
+"CMakeFiles/release.dir/src/main.cpp.obj" \
+"CMakeFiles/release.dir/src/modules/menu.cpp.obj" \
+"CMakeFiles/release.dir/src/modules/operation.cpp.obj" \
+"CMakeFiles/release.dir/src/utils/config.cpp.obj"
 
 # External object files for target release
 release_EXTERNAL_OBJECTS =
 
 release.exe: CMakeFiles/release.dir/src/main.cpp.obj
+release.exe: CMakeFiles/release.dir/src/modules/menu.cpp.obj
+release.exe: CMakeFiles/release.dir/src/modules/operation.cpp.obj
+release.exe: CMakeFiles/release.dir/src/utils/config.cpp.obj
 release.exe: CMakeFiles/release.dir/build.make
 release.exe: CMakeFiles/release.dir/linkLibs.rsp
 release.exe: CMakeFiles/release.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/Project/astro-update-theme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable release.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/Project/astro-update-theme/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable release.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/release.dir/objects.a
 	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/ar.exe" qc CMakeFiles/release.dir/objects.a @CMakeFiles/release.dir/objects1.rsp
-	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe"  -O2 -O2 -O3 -DNDEBUG -Wl,--whole-archive CMakeFiles/release.dir/objects.a -Wl,--no-whole-archive -o release.exe -Wl,--out-implib,librelease.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/release.dir/linkLibs.rsp
+	"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe"  -O2 -g -g -Wl,--whole-archive CMakeFiles/release.dir/objects.a -Wl,--no-whole-archive -o release.exe -Wl,--out-implib,librelease.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/release.dir/linkLibs.rsp
 
 # Rule to build all files generated by this target.
 CMakeFiles/release.dir/build: release.exe

@@ -9,6 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Project/astro-update-theme/src/main.cpp" "CMakeFiles/release.dir/src/main.cpp.obj" "gcc" "CMakeFiles/release.dir/src/main.cpp.obj.d"
+  "D:/Project/astro-update-theme/src/modules/menu.cpp" "CMakeFiles/release.dir/src/modules/menu.cpp.obj" "gcc" "CMakeFiles/release.dir/src/modules/menu.cpp.obj.d"
+  "D:/Project/astro-update-theme/src/modules/operation.cpp" "CMakeFiles/release.dir/src/modules/operation.cpp.obj" "gcc" "CMakeFiles/release.dir/src/modules/operation.cpp.obj.d"
+  "D:/Project/astro-update-theme/src/utils/config.cpp" "CMakeFiles/release.dir/src/utils/config.cpp.obj" "gcc" "CMakeFiles/release.dir/src/utils/config.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
