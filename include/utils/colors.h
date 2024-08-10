@@ -1,5 +1,5 @@
-#ifndef COLOR_MACROS_HPP
-#define COLOR_MACROS_HPP
+#ifndef COLOR_MACROS_H
+#define COLOR_MACROS_H
 
 #include <termcolor/termcolor.hpp>
 
@@ -15,4 +15,4 @@
 #define TEXT_GREEN(msg) termcolor::green << msg << termcolor::reset
 #define TEXT_GREY(msg) termcolor::grey << msg << termcolor::reset
 
-#endif // COLOR_MACROS_HPP
+#endif // COLOR_MACROS_H

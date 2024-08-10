@@ -1,7 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <cstdlib>
-#include <nlohmann/json.hpp>
 #include "utils/colors.h"
 #include "utils/config.h"
 #include "modules/menu.h"

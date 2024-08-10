@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/modules/check.obj: src/modules/check.cpp.obj
+.PHONY : src/modules/check.obj
+
+# target to build an object file
+src/modules/check.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/check.cpp.obj
+.PHONY : src/modules/check.cpp.obj
+
+src/modules/check.i: src/modules/check.cpp.i
+.PHONY : src/modules/check.i
+
+# target to preprocess a source file
+src/modules/check.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/check.cpp.i
+.PHONY : src/modules/check.cpp.i
+
+src/modules/check.s: src/modules/check.cpp.s
+.PHONY : src/modules/check.s
+
+# target to generate assembly for a file
+src/modules/check.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/src/modules/check.cpp.s
+.PHONY : src/modules/check.cpp.s
+
 src/modules/menu.obj: src/modules/menu.cpp.obj
 .PHONY : src/modules/menu.obj
 
@@ -237,6 +261,9 @@ help:
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/modules/check.obj"
+	@echo "... src/modules/check.i"
+	@echo "... src/modules/check.s"
 	@echo "... src/modules/menu.obj"
 	@echo "... src/modules/menu.i"
 	@echo "... src/modules/menu.s"

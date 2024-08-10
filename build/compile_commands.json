@@ -7,6 +7,12 @@
 },
 {
   "directory": "D:/Project/astro-update-theme/build",
+  "command": "\"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe\"  @CMakeFiles/release.dir/includes_CXX.rsp  -O2 -g -g -std=gnu++20 -o CMakeFiles/release.dir/src/modules/check.cpp.obj -c D:/Project/astro-update-theme/src/modules/check.cpp",
+  "file": "D:/Project/astro-update-theme/src/modules/check.cpp",
+  "output": "CMakeFiles/release.dir/src/modules/check.cpp.obj"
+},
+{
+  "directory": "D:/Project/astro-update-theme/build",
   "command": "\"C:/Program Files/RedPanda-Cpp/MinGW64/bin/c++.exe\"  @CMakeFiles/release.dir/includes_CXX.rsp  -O2 -g -g -std=gnu++20 -o CMakeFiles/release.dir/src/modules/menu.cpp.obj -c D:/Project/astro-update-theme/src/modules/menu.cpp",
   "file": "D:/Project/astro-update-theme/src/modules/menu.cpp",
   "output": "CMakeFiles/release.dir/src/modules/menu.cpp.obj"

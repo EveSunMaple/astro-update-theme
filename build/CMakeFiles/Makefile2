@@ -81,12 +81,12 @@ clean: CMakeFiles/release.dir/clean
 CMakeFiles/release.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release.dir/build.make CMakeFiles/release.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Project/astro-update-theme/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target release"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:/Project/astro-update-theme/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target release"
 .PHONY : CMakeFiles/release.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/release.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:/Project/astro-update-theme/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:/Project/astro-update-theme/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/release.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/Project/astro-update-theme/build/CMakeFiles 0
 .PHONY : CMakeFiles/release.dir/rule

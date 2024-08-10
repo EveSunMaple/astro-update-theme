@@ -1,12 +1,6 @@
-#include <filesystem>
-#include <iostream>
-#include <fstream>
-#include <cstdlib>
-#include <vector>
-#include <nlohmann/json.hpp>
-#include <progresscpp/ProgressBar.hpp>
 #include "utils/colors.h"
 #include "utils/config.h"
+#include "modules/check.h"
 #include "modules/operation.h"
 namespace fs = std::filesystem;
 
@@ -24,6 +18,7 @@ void CloneRepoAndIgnore(const std::string &cloneDir, const std::string &remoteRe
 }
 
 void PullRepo(const std::string &cloneDir)
+
 {
     std::string pullCommand = "cd " + cloneDir + " && git pull -f";
     if (std::system(pullCommand.c_str()) == 0)
@@ -36,35 +31,89 @@ void PullRepo(const std::string &cloneDir)
     }
 }
 
+void ClearDirectory(const fs::path &dir)
+{
+    if (fs::exists(dir))
+    {
+        fs::remove_all(dir);
+    }
+    fs::create_directories(dir);
+}
+
 std::vector<std::string> CompareDirectories(const fs::path &dir1, const fs::path &dir2)
 {
     std::vector<std::string> differences;
+    std::unordered_set<std::string> allPaths;
+    const std::unordered_set<std::string> excludeDirs = {"node_modules", "dist"};
 
-    size_t totalFiles = 0;
-    for (const auto &entry : fs::recursive_directory_iterator(dir1))
+    auto shouldExclude = [&](const fs::path &path)
     {
-        if (entry.path().string().find("node_modules") == std::string::npos && entry.path().string().find("\\.") == std::string::npos)
+        return path.filename().string().starts_with(".") || excludeDirs.find(path.filename().string()) != excludeDirs.end();
+    };
+
+    for (auto it = fs::recursive_directory_iterator(dir1); it != fs::recursive_directory_iterator(); ++it)
+    {
+        if (it->is_directory() && shouldExclude(it->path()))
         {
-            ++totalFiles;
+            it.disable_recursion_pending();
+        }
+        else
+        {
+            auto relativePath = fs::relative(it->path(), dir1).string();
+            allPaths.insert(relativePath);
         }
     }
 
-    progresscpp::ProgressBar progressBar(totalFiles, 50);
+    PRINT_CYAN("Backing up files...\n");
+
+    fs::path backupDir = dir1.parent_path() / "astro_backups";
+    ClearDirectory(backupDir);
+
+    for (const auto &relativePath : allPaths)
+    {
+        fs::path sourcePath = dir1 / relativePath;
+        fs::path backupPath = backupDir / relativePath;
+
+        if (fs::is_regular_file(sourcePath))
+        {
+            fs::create_directories(backupPath.parent_path());
+            fs::copy_file(sourcePath, backupPath, fs::copy_options::overwrite_existing);
+        }
+    }
+
+    for (auto it = fs::recursive_directory_iterator(dir2); it != fs::recursive_directory_iterator(); ++it)
+    {
+        if (it->is_directory() && shouldExclude(it->path()))
+        {
+            it.disable_recursion_pending();
+        }
+        else
+        {
+            auto relativePath = fs::relative(it->path(), dir2).string();
+            allPaths.insert(relativePath);
+        }
+    }
+
+    progresscpp::ProgressBar progressBar(allPaths.size(), 50);
     PRINT_CYAN("Comparing directories...\n");
 
-    for (auto &entry : fs::recursive_directory_iterator(dir1))
+    for (const auto relativePath : allPaths)
     {
-        if (entry.path().string().find("node_modules") != std::string::npos || entry.path().string().find("\\.") != std::string::npos)
+        auto pathInDir1 = dir1 / relativePath;
+        auto pathInDir2 = dir2 / relativePath;
+
+        if (fs::exists(pathInDir1) && !fs::exists(pathInDir2))
         {
-            continue;
+            differences.push_back("\e[0;31m[local only] \e[0m" + relativePath);
         }
-
-        auto relativePath = fs::relative(entry.path(), dir1);
-        auto correspondingPath = dir2 / relativePath;
-
-        if (!fs::exists(correspondingPath))
+        else if (!fs::exists(pathInDir1) && fs::exists(pathInDir2))
         {
-            differences.push_back(relativePath.string());
+            differences.push_back("\e[0;32m[clone only] \e[0m" + relativePath);
+        }
+        else if (fs::exists(pathInDir1) && fs::exists(pathInDir2))
+        {
+            if (!areFilesIdentical(pathInDir1, pathInDir2))
+                differences.push_back("\e[0;33m[diff files] \e[0m" + relativePath);
         }
 
         ++progressBar;
@@ -72,9 +121,101 @@ std::vector<std::string> CompareDirectories(const fs::path &dir1, const fs::path
     }
 
     progressBar.done();
-
+    std::sort(differences.begin(), differences.end(), [](const std::string &a, const std::string &b)
+              {
+        auto getPriority = [](const std::string& str) {
+            if (str.find("[local only]") != std::string::npos) return 1;
+            if (str.find("[clone only]") != std::string::npos) return 2;
+            if (str.find("[diff files]") != std::string::npos) return 3;
+            return 4;
+        };
+        return getPriority(a) < getPriority(b); });
     return differences;
 }
+
+std::vector<std::string> AnalyzeFiles(const fs::path &dir1, const fs::path &dir2, std::vector<std::string> diff)
+{
+    size_t totalDelete = 0, totalAdd = 0, totalOverwrite = 0;
+    std::vector<std::string> report;
+    progresscpp::ProgressBar progressBar(diff.size(), 50);
+    for (auto relativePath : diff)
+    {
+        int operation = 0;
+        if (relativePath.find("[local only]") != std::string::npos)
+            operation = 1;
+        if (relativePath.find("[clone only]") != std::string::npos)
+            operation = 2;
+        if (relativePath.find("[diff files]") != std::string::npos)
+            operation = 3;
+        relativePath.erase(0, 20);
+        fs::path pathInDir1 = dir1 / relativePath;
+        fs::path pathInDir2 = dir2 / relativePath;
+        if (operation == 1 && canDeleteFile(pathInDir1))
+        {
+            // fs::remove(pathInDir1); // 删除文件
+            report.push_back("\e[0;31mD \e[0m" + relativePath);
+            totalDelete++;
+        }
+        if (operation == 2 && !isNoChangeFile(pathInDir2))
+        {
+            // fs::create_directories(pathInDir1.parent_path());
+            // fs::copy(pathInDir2, pathInDir1, fs::copy_options::overwrite_existing);
+            report.push_back("\e[0;32mA \e[0m" + relativePath);
+            totalAdd++;
+        }
+        if (operation == 3 && !isNoChangeFile(pathInDir1))
+        {
+            auto parent = pathInDir1.parent_path().filename().string();
+            auto extension = pathInDir1.extension().string();
+            if (extension == ".astro")
+            {
+                if (canOverwriteFileByContent(pathInDir1))
+                {
+                    report.push_back("\e[0;36mO \e[0m" + relativePath);
+                    // fs::create_directories(pathInDir1.parent_path());
+                    // fs::copy(pathInDir2, pathInDir1, fs::copy_options::overwrite_existing);
+                    totalOverwrite++;
+                }
+                else
+                {
+                    report.push_back("\e[0;35mIMP \e[0mCannot overwrite file\e[0;36m " + relativePath + " \e[0mas it may have stored some content related to your blog.");
+                }
+            }
+            else if (parent.find("src") != std::string::npos)
+            {
+                report.push_back("\e[0;35mIMP \e[0mCannot overwrite file\e[0;36m " + relativePath + " \e[0mas it may be a configuration file, please check it yourself.");
+            }
+            else
+            {
+                if (canOverwriteFileByDirectory(pathInDir1) || relativePath.find("\\") == std::string::npos)
+                {
+                    report.push_back("\e[0;36mO \e[0m" + relativePath);
+                    // fs::create_directories(pathInDir1.parent_path());
+                    // fs::copy(pathInDir2, pathInDir1, fs::copy_options::overwrite_existing);
+                    totalOverwrite++;
+                }
+            }
+        }
+
+        ++progressBar;
+        progressBar.display();
+    }
+    std::sort(report.begin(), report.end(), [](const std::string &a, const std::string &b)
+              {
+        auto getPriority = [](const std::string& str) {
+            if (str.find("\e[0;31mD \e[0m") != std::string::npos) return 1;
+            if (str.find("\e[0;32mA \e[0m") != std::string::npos) return 2;
+            if (str.find("\e[0;36mO \e[0m") != std::string::npos) return 3;
+            if (str.find("\e[0;35mIMP \e[0m") != std::string::npos) return 4;
+            return 4;
+        };
+        return getPriority(a) < getPriority(b); });
+    report.push_back("Deleted \e[0;36m" + std::to_string(totalDelete) + " \e[0mfiles, added \e[0;36m" + std::to_string(totalAdd) + " \e[0mfiles while overwriting \e[0;36m" + std::to_string(totalOverwrite) + " \e[0mfiles");
+    progressBar.done();
+    return report;
+}
+
+// 下面的函数可以被 menu 调用
 
 void ChangeProject(Json &config)
 {
@@ -156,13 +297,20 @@ void CheckForUpdates(Json &config)
     if (differences.empty())
     {
         PRINT_GREEN("No differences found between the original and cloned repositories.\n");
+        return;
     }
-    else
+
+    PRINT_CYAN("Differences found:\n");
+    for (const auto &diff : differences)
     {
-        PRINT_CYAN("Differences found:\n");
-        for (const auto &diff : differences)
-        {
-            std::cout << diff << "\n";
-        }
+        std::cout << diff << "\n";
     }
+
+    PRINT_CYAN("Analyzing files...\n");
+    std::vector<std::string> report = AnalyzeFiles(fs::path(localRepo), fs::path(cloneDir), differences);
+    for (const auto &repo : report)
+    {
+        std::cout << repo << "\n";
+    }
+    return;
 }

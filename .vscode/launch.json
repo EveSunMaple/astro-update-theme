@@ -10,6 +10,17 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build", 
             "environment": [],
+            "console": "externalTerminal"
+        },
+        {
+            "name": "(Windows) [vscode]启动",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/release.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build", 
+            "environment": [],
             "console": "integratedTerminal" 
         }
     ]

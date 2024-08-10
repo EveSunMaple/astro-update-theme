@@ -1,7 +1,3 @@
-#include <iostream>
-#include <fstream>
-#include <cstdlib>
-#include <nlohmann/json.hpp>
 #include "utils/colors.h"
 #include "utils/config.h"
 #include "modules/menu.h"
@@ -26,10 +22,10 @@ void DisplayProjects(const Json &config)
     {
         if (project["name"] == config["name"])
         {
-            PRINT_GREY("Name: " << TEXT_CYAN(project["name"]) << "\n");
-            PRINT_GREY("Local Repo: " << TEXT_CYAN(project["local_repo"]) << "\n");
-            PRINT_GREY("Clone Repo: " << TEXT_CYAN(project["clone_repo"]) << "\n");
-            PRINT_GREY("Remote Repo: " << TEXT_CYAN(project["remote_repo"]) << "\n");
+            std::cout << "Name: " << TEXT_CYAN(project["name"]) << "\n";
+            std::cout << "Local Repo: " << TEXT_CYAN(project["local_repo"]) << "\n";
+            std::cout << "Clone Repo: " << TEXT_CYAN(project["clone_repo"]) << "\n";
+            std::cout << "Remote Repo: " << TEXT_CYAN(project["remote_repo"]) << "\n";
             std::cout << "\n";
             return;
         }
