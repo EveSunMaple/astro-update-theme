@@ -49,11 +49,11 @@ std::vector<std::string> CompareDirectories(const fs::path &dir1, const fs::path
 {
     std::vector<std::string> differences;
     std::unordered_set<std::string> allPaths;
-    const std::unordered_set<std::string> excludeDirs = {"node_modules", "dist"};
+    const std::unordered_set<std::string> exclude = {"node_modules", "dist", "astro.config.js", "astro.config.mjs"};
 
     auto shouldExclude = [&](const fs::path &path)
     {
-        return path.filename().string().starts_with(".") || excludeDirs.find(path.filename().string()) != excludeDirs.end();
+        return path.filename().string().starts_with(".") || exclude.find(path.filename().string()) != exclude.end();
     };
 
     try
@@ -257,10 +257,11 @@ void runPackageManagerUpdate(const fs::path &dirPath)
     bool hasPnpmLock = fs::exists(dirPath / "pnpm-lock.yaml");
     bool hasYarnLock = fs::exists(dirPath / "yarn.lock");
 
+    std::string command = "cd " + dirPath.string() + " && npm install";
     if (hasPnpmLock)
     {
         PRINT_CYAN("pnpm-lock.yaml found. Running 'pnpm update'...\n");
-        std::string command = "cd " + dirPath.string() + " && pnpm update";
+        command = "cd " + dirPath.string() + " && pnpm update";
         if (std::system(command.c_str()) != 0)
         {
             PRINT_RED("Failed to run 'pnpm update'\n");
@@ -270,12 +271,21 @@ void runPackageManagerUpdate(const fs::path &dirPath)
     if (hasYarnLock)
     {
         PRINT_CYAN("yarn.lock found. Running 'yarn install'...\n");
-        std::string command = "cd " + dirPath.string() + " && yarn install";
+        command = "cd " + dirPath.string() + " && yarn install";
         if (std::system(command.c_str()) != 0)
         {
             PRINT_RED("Failed to run 'yarn install'\n");
         }
     }
+
+    PRINT_CYAN("Running 'npm install'...\n");
+    command = "cd " + dirPath.string() + " && npm install";
+    if (std::system(command.c_str()) != 0)
+    {
+        PRINT_RED("Failed to run 'pnpm install'\n");
+    }
+
+    return;
 }
 
 // 下面的函数可以被 menu 调用
