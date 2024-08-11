@@ -1,8 +1,11 @@
 #ifndef CHECK_H
 #define CHECK_H
 
-#include <fstream>
 #include <filesystem>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <regex>
 #include <nlohmann/json.hpp>
 
 namespace fs = std::filesystem;
@@ -21,6 +24,6 @@ bool canDeleteFile(const fs::path &filePath);
 bool canOverwriteFileByDirectory(const fs::path &filePath);
 
 // 检查此文件是否可以被直接覆盖（通过文件内容）
-bool canOverwriteFileByContent(const fs::path &filePath);
+bool canOverwriteFileByContent(const fs::path &filePath, const fs::path &compareFilePath, std::vector<std::string> &log);
 
 #endif // CHECK_H

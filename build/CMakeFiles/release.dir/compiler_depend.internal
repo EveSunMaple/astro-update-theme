@@ -525,6 +525,7 @@ CMakeFiles/release.dir/src/modules/check.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/deque.tcc
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/enable_special_members.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h
@@ -578,6 +579,18 @@ CMakeFiles/release.dir/src/modules/check.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ranges_uninitialized.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ranges_util.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_constants.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_error.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.tcc
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h
@@ -591,6 +604,7 @@ CMakeFiles/release.dir/src/modules/check.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_deque.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h
@@ -602,6 +616,7 @@ CMakeFiles/release.dir/src/modules/check.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_stack.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tree.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h
@@ -621,6 +636,7 @@ CMakeFiles/release.dir/src/modules/check.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_array.tcc
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_before.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bitset
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cassert
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno
@@ -640,6 +656,7 @@ CMakeFiles/release.dir/src/modules/check.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/deque
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h
@@ -675,7 +692,9 @@ CMakeFiles/release.dir/src/modules/check.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ranges
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/regex
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stack
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf
@@ -1330,6 +1349,7 @@ CMakeFiles/release.dir/src/modules/operation.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_forced.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cxxabi_init_exception.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/deque.tcc
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/enable_special_members.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/erase_if.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception.h
@@ -1383,6 +1403,18 @@ CMakeFiles/release.dir/src/modules/operation.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ranges_uninitialized.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ranges_util.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_constants.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_error.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.tcc
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h
@@ -1396,6 +1428,7 @@ CMakeFiles/release.dir/src/modules/operation.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_bvector.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_construct.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_deque.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_function.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_heap.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_iterator.h
@@ -1407,6 +1440,7 @@ CMakeFiles/release.dir/src/modules/operation.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_stack.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tree.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h
@@ -1427,6 +1461,7 @@ CMakeFiles/release.dir/src/modules/operation.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_array.tcc
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_before.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/vector.tcc
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bitset
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cassert
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno
@@ -1446,6 +1481,7 @@ CMakeFiles/release.dir/src/modules/operation.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/deque
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h
@@ -1482,7 +1518,9 @@ CMakeFiles/release.dir/src/modules/operation.cpp.obj
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/pstl_config.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ranges
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/regex
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream
+ C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stack
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdlib.h
  C:/Program Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf

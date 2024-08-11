@@ -13,6 +13,7 @@
 #include <progresscpp/ProgressBar.hpp>
 #include <nlohmann/json.hpp>
 
+namespace fs = std::filesystem;
 using Json = nlohmann::json;
 
 // 更改当前选择的项目

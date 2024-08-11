@@ -496,6 +496,25 @@ CMakeFiles/release.dir/src/modules/operation.cpp.obj: \
  C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_numeric_defs.h \
  C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/any \
  D:/Project/astro-update-theme/include/modules/check.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/regex \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bitset \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stack \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/deque \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_deque.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/deque.tcc \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_stack.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_constants.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_error.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.tcc \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.tcc \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.tcc \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.tcc \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.h \
+ C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.tcc \
  D:/Project/astro-update-theme/include/modules/operation.h \
  C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/unordered_set \
  C:/Program\ Files/RedPanda-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unordered_set.h \
