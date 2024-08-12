@@ -7,16 +7,10 @@
       "remote_repo": "git@github.com:EveSunMaple/Frosti.git"
     },
     {
-      "clone_repo": "D:\\Project\\test\\test-frosti",
-      "local_repo": "D:\\Project\\test\\test-frosti",
-      "name": "frosti-new",
-      "remote_repo": "https://github.com/EveSunMaple/Frosti"
-    },
-    {
-      "clone_repo": "D:\\Project\\test\\",
-      "local_repo": "D:\\Project\\test\\",
-      "name": "astropaper",
-      "remote_repo": "https://github.com/satnaing/astro-paper"
+      "clone_repo": "D:\\Frosti-AFO",
+      "local_repo": "D:\\Frosti-AFO",
+      "name": "Frosti-AFO",
+      "remote_repo": "git@github.com:EveSunMaple/Frosti.git"
     }
   ],
   "name": "frosti"

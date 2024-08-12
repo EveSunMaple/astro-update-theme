@@ -33,7 +33,7 @@ void CreateConfig(const std::string &filename)
 
     PRINT_YELLOW("Enter Blog name: ");
     std::cin >> name;
-    PRINT_YELLOW("Enter local repository URL: ");
+    PRINT_YELLOW("Enter local repository path: ");
     std::cin >> localRepo;
     PRINT_YELLOW("Enter remote repository URL: ");
     std::cin >> remoteRepo;
@@ -47,7 +47,7 @@ void CreateConfig(const std::string &filename)
     blog["remote_repo"] = remoteRepo;
 
     config["astro-project"].push_back(blog);
-    config["name"].push_back(name);
+    config["name"] = name;
 
     std::ofstream file(filename);
     file << config.dump(2);

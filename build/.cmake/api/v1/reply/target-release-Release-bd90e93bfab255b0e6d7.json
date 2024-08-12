@@ -28,13 +28,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 9,
+				"line" : 10,
 				"parent" : 0
 			}
 		]
@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -O2 -g -g -std=gnu++20"
+					"fragment" : " -O2 -O2 -O3 -DNDEBUG -std=gnu++20"
 				}
 			],
 			"includes" : 
@@ -80,11 +80,11 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O2 -g -g",
+				"fragment" : "-O2 -O2 -O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-static-libgcc -static-libstdc++ -static -lpthread",
 				"role" : "flags"
 			},
 			{

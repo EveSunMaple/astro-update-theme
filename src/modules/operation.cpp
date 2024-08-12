@@ -78,7 +78,7 @@ std::vector<std::string> CompareDirectories(const fs::path &dir1, const fs::path
 
     PRINT_CYAN("Backing up files...\n");
 
-    fs::path backupDir = dir1.parent_path() / "astro_backups";
+    fs::path backupDir = dir1.parent_path() / (dir1.filename().string() + "_backup");
     ClearDirectory(backupDir);
 
     for (const auto &relativePath : allPaths)
@@ -313,7 +313,7 @@ void CreateNewProject(Json &config)
 
     PRINT_YELLOW("Enter Blog name: ");
     std::cin >> name;
-    PRINT_YELLOW("Enter local repository URL: ");
+    PRINT_YELLOW("Enter local repository path: ");
     std::cin >> localRepo;
     PRINT_YELLOW("Enter remote repository URL: ");
     std::cin >> remoteRepo;
