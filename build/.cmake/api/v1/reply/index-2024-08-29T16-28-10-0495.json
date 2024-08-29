@@ -3,8 +3,9 @@
 	{
 		"generator" : 
 		{
-			"multiConfig" : false,
-			"name" : "Unix Makefiles"
+			"multiConfig" : true,
+			"name" : "Visual Studio 17 2022",
+			"platform" : "x64"
 		},
 		"paths" : 
 		{
@@ -26,7 +27,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-c9fea79e3929e743e55e.json",
+			"jsonFile" : "codemodel-v2-8f966edb76e7bd780967.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +36,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-f076c35178922aede071.json",
+			"jsonFile" : "cache-v2-bb62c7bb5b9b1c27be0e.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +45,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-0e2c2c8fe1218b4749c9.json",
+			"jsonFile" : "cmakeFiles-v1-26ec262c71cdead50ecf.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +54,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-76f228fc531deeef2865.json",
+			"jsonFile" : "toolchains-v1-1e90a40c0b099db2892c.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -90,7 +91,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "cache-v2-f076c35178922aede071.json",
+						"jsonFile" : "cache-v2-bb62c7bb5b9b1c27be0e.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -99,7 +100,7 @@
 						}
 					},
 					{
-						"jsonFile" : "codemodel-v2-c9fea79e3929e743e55e.json",
+						"jsonFile" : "codemodel-v2-8f966edb76e7bd780967.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
@@ -108,7 +109,7 @@
 						}
 					},
 					{
-						"jsonFile" : "toolchains-v1-76f228fc531deeef2865.json",
+						"jsonFile" : "toolchains-v1-1e90a40c0b099db2892c.json",
 						"kind" : "toolchains",
 						"version" : 
 						{
@@ -117,7 +118,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-0e2c2c8fe1218b4749c9.json",
+						"jsonFile" : "cmakeFiles-v1-26ec262c71cdead50ecf.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

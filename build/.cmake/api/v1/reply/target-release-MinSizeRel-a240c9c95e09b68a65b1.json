@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "release.exe"
+			"path" : "MinSizeRel/release.exe"
 		},
 		{
-			"path" : "release.pdb"
+			"path" : "MinSizeRel/release.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -O2 -O2 -O3 -DNDEBUG -std=gnu++20"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc -O2 -O2 /MD /O1 /Ob1 /DNDEBUG -std:c++20"
 				}
 			],
 			"includes" : 
@@ -74,21 +74,27 @@
 			]
 		}
 	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
 	"id" : "release::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O2 -O2 -O3 -DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc -O2 -O2 /MD /O1 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-static-libgcc -static-libstdc++ -static -lpthread",
+				"fragment" : "/machine:x64 -static-libgcc -static-libstdc++ -static -lpthread /INCREMENTAL:NO /subsystem:console",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
 				"role" : "libraries"
 			}
 		],
