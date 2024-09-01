@@ -1,20 +1,15 @@
-#include "utils/colors.h"
+#include "utils/colors.hpp"
 #include "utils/config.h"
-#include "modules/menu.h"
+#include "utils/message.hpp"
 
 int main()
 {
-    if (!CheckDependency("git --version"))
-    {
-        PRINT_RED("Git is not installed. Please install Git and try again.\n");
-        return 1;
-    }
+    MessagePrinter printer("messages.json");
+    printer.print("welcome", colorize("INFO", "cyan"), colorize("Astro Project!", "yellow"));
+    printer.print("file_not_found", colorize("include/termcolor", "cyan"), colorize("termcolor.hpp", "cyan"));
 
-    if (!CheckDependency("node -v"))
-    {
-        PRINT_RED("Node.js is not installed. Please install Node.js and try again.\n");
-        return 1;
-    }
+    CheckDependency("git --version");
+    CheckDependency("node -v");
 
     std::string configFile = "config.json";
     Json config;
@@ -34,7 +29,6 @@ int main()
         if (!ValidateConfig(config))
             return 1;
         system("pause");
-        EnterMenu(config, configFile);
     }
 
     return 0;

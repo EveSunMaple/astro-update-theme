@@ -1,10 +1,23 @@
 {
-    "astro-project": [
-        {
-            "clone_repo": "D:\\Project\\test\\",
-            "local_repo": "D:\\Project\\test\\test-frosti",
-            "name": "Frosti",
-            "remote_repo": "https://github.com/EveSunMaple/Frosti"
-        }
-    ]
+  "astro-project": [
+    {
+      "clone_repo": "D:\\Astro",
+      "local_repo": "D:\\Astro",
+      "name": "frosti",
+      "remote_repo": "git@github.com:EveSunMaple/Frosti.git"
+    },
+    {
+      "clone_repo": "D:\\Frosti-AFO",
+      "local_repo": "D:\\Frosti-AFO",
+      "name": "Frosti-AFO",
+      "remote_repo": "git@github.com:EveSunMaple/Frosti.git"
+    },
+    {
+      "clone_repo": "D:\\Astro-Site",
+      "local_repo": "D:\\Astro-Site",
+      "name": "Yan",
+      "remote_repo": "git@github.com:EveSunMaple/Frosti.git"
+    }
+  ],
+  "name": "Yan"
 }

@@ -4,15 +4,6 @@
     <ClCompile Include="D:\Project\astro-update-theme\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Project\astro-update-theme\src\modules\check.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\Project\astro-update-theme\src\modules\menu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="D:\Project\astro-update-theme\src\modules\operation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="D:\Project\astro-update-theme\src\utils\config.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -5,10 +5,10 @@
             "name": "(Windows) 启动",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/release.exe",
+            "program": "${workspaceFolder}/build/Debug/release.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/build", 
+            "cwd": "${workspaceFolder}", 
             "environment": [],
             "console": "externalTerminal"
         },
@@ -16,10 +16,10 @@
             "name": "(Windows) [vscode]启动",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/release.exe",
+            "program": "${workspaceFolder}/build/Debug/release.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/build", 
+            "cwd": "${workspaceFolder}", 
             "environment": [],
             "console": "integratedTerminal" 
         }

@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.astro": "astro",
         "iostream": "cpp",
         "limits": "cpp",
         "cstdlib": "cpp",
@@ -90,7 +91,8 @@
         "xmemory": "cpp",
         "xtr1common": "cpp",
         "xtree": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "variant": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

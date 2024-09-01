@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib>
-#include "utils/colors.h"
 #include "utils/config.h"
+#include "utils/message.hpp"
 
 void ClearScreen()
 {
@@ -12,10 +12,13 @@ void ClearScreen()
 #endif
 }
 
-bool CheckDependency(const std::string &command)
+void CheckDependency(const std::string &command)
 {
+
+    MessagePrinter printer("messages.json");
     int result = std::system(command.c_str());
-    return result == 0;
+    if (result != 0)
+        printer.print("check_dependency_deficiency", "ERROR", command);
 }
 
 bool ConfigExists(const std::string &filename)
@@ -31,11 +34,8 @@ void CreateConfig(const std::string &filename)
 
     std::string name, localRepo, cloneRepo, remoteRepo;
 
-    PRINT_YELLOW("Enter Blog name: ");
     std::cin >> name;
-    PRINT_YELLOW("Enter local repository path: ");
     std::cin >> localRepo;
-    PRINT_YELLOW("Enter remote repository URL: ");
     std::cin >> remoteRepo;
 
     cloneRepo = localRepo;
@@ -67,9 +67,6 @@ bool ValidateConfig(const Json &config)
             break;
         }
     }
-
-    if (!nameExists)
-        PRINT_RED("There is no project named " << TEXT_CYAN(mainName << ".\n"));
 
     isValid = nameExists;
     return isValid;

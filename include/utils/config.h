@@ -12,7 +12,7 @@ using Json = nlohmann::json;
 void ClearScreen();
 
 // 检查依赖
-bool CheckDependency(const std::string &command);
+void CheckDependency(const std::string &command);
 
 // 检查配置文件是否存在
 bool ConfigExists(const std::string &filename);

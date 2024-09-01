@@ -1,0 +1,8 @@
+{
+  "check_dependency_success": "<0>检查依赖项<1>成功。",
+  "check_dependency_deficiency": "<0>检查依赖项<1>缺失，请先安装必要的依赖。",
+  "error_message": "发生了一个错误，请重试。",
+  "exit_message": "感谢使用，再见！",
+  "file_not_found": "在 <0> 路径下未找到名为 <1> 的文件。",
+  "welcome": "<0> 欢迎使用 <1>。"
+}
